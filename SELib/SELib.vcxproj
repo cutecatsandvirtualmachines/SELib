@@ -10,9 +10,11 @@
     <ClInclude Include="include\Globals.h" />
     <ClInclude Include="include\MemoryEx.h" />
     <ClInclude Include="include\SELib.h" />
+    <ClInclude Include="include\IO.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MemoryEx.cpp" />
+    <ClCompile Include="src\IO.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -61,7 +63,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>

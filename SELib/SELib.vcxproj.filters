@@ -20,9 +20,15 @@
     <ClInclude Include="include\SELib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\IO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MemoryEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

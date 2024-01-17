@@ -1,5 +1,6 @@
 #pragma once
 
+extern "C" {
 #include <Uefi.h>
 #include <Library/UefiLib.h>
 #include <Library/DebugLib.h>
@@ -12,4 +13,8 @@
 #include <Protocol/LoadedImage.h>
 #include <IndustryStandard/PeImage.h>
 #include <Guid/GlobalVariable.h>
+#include <Guid/FileInfo.h>
+}
 
+#undef NULL
+#define NULL 0
