@@ -7,6 +7,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Threading.cpp" />
     <ClCompile Include="src\Memory.cpp" />
     <ClCompile Include="src\IO.cpp" />
   </ItemGroup>
@@ -15,6 +16,7 @@
     <ClInclude Include="include\SELib\Globals.h" />
     <ClInclude Include="include\SELib\IO.h" />
     <ClInclude Include="include\SELib\Memory.h" />
+    <ClInclude Include="include\SELib\Threading.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
