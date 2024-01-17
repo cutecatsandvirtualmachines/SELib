@@ -7,14 +7,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Globals.h" />
-    <ClInclude Include="include\MemoryEx.h" />
-    <ClInclude Include="include\SELib.h" />
-    <ClInclude Include="include\IO.h" />
+    <ClCompile Include="src\Memory.cpp" />
+    <ClCompile Include="src\IO.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\MemoryEx.cpp" />
-    <ClCompile Include="src\IO.cpp" />
+    <ClInclude Include="include\SELib.h" />
+    <ClInclude Include="include\SELib\Globals.h" />
+    <ClInclude Include="include\SELib\IO.h" />
+    <ClInclude Include="include\SELib\Memory.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

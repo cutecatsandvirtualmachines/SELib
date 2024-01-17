@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Globals.h>
+#include <SELib/Globals.h>
 
 namespace memory {
 	void* eMalloc(size_t sz);

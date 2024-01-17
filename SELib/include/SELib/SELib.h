@@ -1,4 +1,4 @@
 #pragma once
 
-#include <SELib/Memory.h>
+#include <SELib/MemoryEx.h>
 #include <SELib/IO.h>

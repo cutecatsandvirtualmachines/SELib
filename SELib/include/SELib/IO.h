@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Globals.h>
+#include <SELib/Globals.h>
 
 #define DbgMsg(x, ...) Print((CHAR16*)(x L"\n"), __VA_ARGS__)
 
