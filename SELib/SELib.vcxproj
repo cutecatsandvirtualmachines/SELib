@@ -7,12 +7,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Globals.h" />
-    <ClInclude Include="MemoryEx.h" />
-    <ClInclude Include="SELib.h" />
+    <ClInclude Include="include\Globals.h" />
+    <ClInclude Include="include\MemoryEx.h" />
+    <ClInclude Include="include\SELib.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MemoryEx.cpp" />
+    <ClCompile Include="src\MemoryEx.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -62,6 +62,7 @@
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>EFI Application</SubSystem>

@@ -11,18 +11,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SELib.h">
+    <ClInclude Include="include\Globals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Globals.h">
+    <ClInclude Include="include\MemoryEx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MemoryEx.h">
+    <ClInclude Include="include\SELib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MemoryEx.cpp">
+    <ClCompile Include="src\MemoryEx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
