@@ -17,7 +17,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{540d433f-c2df-49a6-895c-f5c74b014777}</ProjectGuid>
+    <ProjectGuid>{AA262B0C-F0ED-4666-BE1F-D843AD6F8C7E}</ProjectGuid>
     <RootNamespace>HyperMe</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <ProjectName>SELib</ProjectName>
@@ -42,7 +42,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)edk2\CryptoPkg\Include;$(ProjectDir)edk2\ShellPkg\Include;$(ProjectDir)edk2\MdePkg\Include\X64;$(ProjectDir)edk2\MdePkg\Include;$(ProjectDir)edk2\StdLib\Include;$(ProjectDir)</IncludePath>
+    <IncludePath>$(ProjectDir)edk2\CryptoPkg\Include;$(ProjectDir)edk2\ShellPkg\Include;$(ProjectDir)edk2\MdePkg\Include\X64;$(ProjectDir)edk2\MdePkg\Include\AArch64;$(ProjectDir)edk2\MdePkg\Include;$(ProjectDir)edk2\StdLib\Include;$(ProjectDir)</IncludePath>
     <LibraryPath>$(ProjectDir)edk2</LibraryPath>
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.lib</TargetExt>
