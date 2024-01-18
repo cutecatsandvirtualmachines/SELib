@@ -23,6 +23,9 @@
     <ClCompile Include="src\Svm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Vmcall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\SELib\Globals.h">
@@ -41,6 +44,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\SELib\Svm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SELib\Vmcall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
