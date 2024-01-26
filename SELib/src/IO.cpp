@@ -1,5 +1,7 @@
 #include "SELib/IO.h"
 
+#include <SELib/Globals.h>
+
 void io::vga::Clear()
 {
 	gST->ConOut->ClearScreen(gST->ConOut);

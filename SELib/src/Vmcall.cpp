@@ -4,7 +4,7 @@ UINT64 key = 0;
 
 bool vmcall::IsVmcall(UINT64 r9)
 {
-    return r9 == (key ^ 0xbabab00e);
+    return r9 == (0xbabab00e);
 }
 
 bool vmcall::IsValidKey(UINT64 _key)

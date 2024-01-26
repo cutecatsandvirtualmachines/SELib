@@ -7,6 +7,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Identity.cpp" />
     <ClCompile Include="src\Vmcall.cpp" />
     <ClCompile Include="src\Threading.cpp" />
     <ClCompile Include="src\Memory.cpp" />
@@ -14,6 +15,8 @@
     <ClCompile Include="src\Svm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\SELib\ia32.h" />
+    <ClInclude Include="include\SELib\Identity.h" />
     <ClInclude Include="include\SELib.h" />
     <ClInclude Include="include\SELib\Globals.h" />
     <ClInclude Include="include\SELib\IO.h" />
@@ -61,11 +64,11 @@
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>false</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <StringPooling>true</StringPooling>
-      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+      <ExceptionHandling>false</ExceptionHandling>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
