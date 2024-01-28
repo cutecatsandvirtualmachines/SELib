@@ -7,6 +7,7 @@
 #define OFFSET_2MB(x) (x & (LARGE_PAGE_SIZE - 1))
 
 #define RtlZeroMemory(p, len) memory::memset(p, 0, len)
+#define RtlCopyMemory(dst, src, len) memory::memcpy(dst, src, len)
 
 typedef struct _PML4T {
     PML4E_64 entry[512];

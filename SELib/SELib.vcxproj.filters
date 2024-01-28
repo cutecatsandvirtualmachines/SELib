@@ -29,6 +29,15 @@
     <ClCompile Include="src\Identity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Bitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IDT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CPU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\SELib\Globals.h">
@@ -58,5 +67,22 @@
     <ClInclude Include="include\SELib\ia32.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\SELib\Bitmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SELib\IDT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SELib\CPU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\IDT-helper.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="src\CPU-helper.asm">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

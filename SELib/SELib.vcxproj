@@ -7,6 +7,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\CPU.cpp" />
+    <ClCompile Include="src\IDT.cpp" />
+    <ClCompile Include="src\Bitmap.cpp" />
     <ClCompile Include="src\Identity.cpp" />
     <ClCompile Include="src\Vmcall.cpp" />
     <ClCompile Include="src\Threading.cpp" />
@@ -15,6 +18,9 @@
     <ClCompile Include="src\Svm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\SELib\CPU.h" />
+    <ClInclude Include="include\SELib\IDT.h" />
+    <ClInclude Include="include\SELib\Bitmap.h" />
     <ClInclude Include="include\SELib\ia32.h" />
     <ClInclude Include="include\SELib\Identity.h" />
     <ClInclude Include="include\SELib.h" />
@@ -24,6 +30,10 @@
     <ClInclude Include="include\SELib\Threading.h" />
     <ClInclude Include="include\SELib\Svm.h" />
     <ClInclude Include="include\SELib\Vmcall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\CPU-helper.asm" />
+    <None Include="src\IDT-helper.asm" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
