@@ -1,11 +1,25 @@
 #pragma once
 
-#include <Windows.h>
-
 namespace vmcall {
-	bool IsVmcall(UINT64 r9);
-	bool IsValidKey(UINT64 key);
+	__declspec(dllexport) inline unsigned long long vmcallKey;
 
-	void SetKey(UINT64 key);
-	UINT64 GetKey();
+	__forceinline bool IsVmcall(unsigned long long r9)
+	{
+		return r9 == (vmcallKey ^ 0xbabab00e);
+	}
+
+	__forceinline bool IsValidKey(unsigned long long _key)
+	{
+		return !vmcallKey || vmcallKey == _key;
+	}
+
+	__forceinline void SetKey(unsigned long long _key)
+	{
+		vmcallKey = _key;
+	}
+
+	__forceinline unsigned long long GetKey()
+	{
+		return vmcallKey;
+	}
 }
