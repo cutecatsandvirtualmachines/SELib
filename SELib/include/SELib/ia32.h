@@ -336,12 +336,12 @@ typedef union
          * @see Vol3A[4.3(32-BIT PAGING)]
          * @see Vol3A[4.5(4-LEVEL PAGING)]
          */
-        UINT64 AddressOfPageDirectory : 36;
+        UINT64 AddressOfPageDirectory : 40;
 #define CR3_ADDRESS_OF_PAGE_DIRECTORY_BIT                            12
 #define CR3_ADDRESS_OF_PAGE_DIRECTORY_FLAG                           0xFFFFFFFFF000
 #define CR3_ADDRESS_OF_PAGE_DIRECTORY_MASK                           0xFFFFFFFFF
 #define CR3_ADDRESS_OF_PAGE_DIRECTORY(_)                             (((_) >> 12) & 0xFFFFFFFFF)
-        UINT64 Reserved3 : 16;
+        UINT64 Reserved3 : 12;
     };
 
     UINT64 Flags;
