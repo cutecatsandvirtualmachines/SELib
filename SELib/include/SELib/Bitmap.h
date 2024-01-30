@@ -1,6 +1,6 @@
 #pragma once
 
-#include <SELib/Globals.h>
+#include <SELib/BasicTypes.h>
 
 namespace bitmap {
 	typedef struct _LARGE_BITMAP {

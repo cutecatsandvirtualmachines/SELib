@@ -1,5 +1,7 @@
 #include "SELib/Svm.h"
 
+#include <Windows.h>
+
 void svm::Vmcb::InjectException(unsigned long long Vector)
 {
     EventInj EventInjection{ 0 };

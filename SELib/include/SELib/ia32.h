@@ -3,16 +3,7 @@
 
 #pragma warning (disable:4201)
 
-typedef unsigned char       UINT8;
-typedef unsigned short      UINT16;
-typedef unsigned int        UINT32;
-typedef unsigned long long  UINT64;
-
-#define PVOID void*
-#define EXCEPTION_EXECUTE_HANDLER 1
-#define min(a, b) (a > b ? b : a)
-
-#define MAXULONG64 0xffffffffffffffff
+#include <SELib/BasicTypes.h>
 
 // MTRR Physical Base MSRs
 #define MSR_IA32_MTRR_PHYSBASE0                                          0x00000200

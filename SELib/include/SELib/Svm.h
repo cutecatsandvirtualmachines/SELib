@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Windows.h>
+#include <SELib/Vmx.h>
 
 namespace svm {
     struct VmcbControlArea

@@ -7,6 +7,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="include\SELib\pe.cpp" />
     <ClCompile Include="src\CPU.cpp" />
     <ClCompile Include="src\IDT.cpp" />
     <ClCompile Include="src\Bitmap.cpp" />
@@ -18,6 +19,7 @@
     <ClCompile Include="src\Svm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\SELib\BasicTypes.h" />
     <ClInclude Include="include\SELib\CPU.h" />
     <ClInclude Include="include\SELib\IDT.h" />
     <ClInclude Include="include\SELib\Bitmap.h" />
@@ -30,10 +32,16 @@
     <ClInclude Include="include\SELib\Threading.h" />
     <ClInclude Include="include\SELib\Svm.h" />
     <ClInclude Include="include\SELib\Vmcall.h" />
+    <ClInclude Include="include\SELib\Vmx.h" />
+    <ClInclude Include="include\SELib\pe.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\CPU-helper.asm" />
-    <None Include="src\IDT-helper.asm" />
+    <MASM Include="src\CPU-helper.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="src\IDT-helper.asm">
+      <FileType>Document</FileType>
+    </MASM>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -54,6 +62,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -106,5 +115,6 @@
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
   </ImportGroup>
 </Project>

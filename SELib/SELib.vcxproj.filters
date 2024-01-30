@@ -38,6 +38,9 @@
     <ClCompile Include="src\CPU.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="include\SELib\pe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\SELib\Globals.h">
@@ -76,13 +79,22 @@
     <ClInclude Include="include\SELib\CPU.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\SELib\BasicTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SELib\Vmx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SELib\pe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\IDT-helper.asm">
+    <MASM Include="src\CPU-helper.asm">
       <Filter>Source Files</Filter>
-    </None>
-    <None Include="src\CPU-helper.asm">
+    </MASM>
+    <MASM Include="src\IDT-helper.asm">
       <Filter>Source Files</Filter>
-    </None>
+    </MASM>
   </ItemGroup>
 </Project>

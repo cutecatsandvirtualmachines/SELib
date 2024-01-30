@@ -1,6 +1,6 @@
 #pragma once
 
-#include <SELib/Globals.h>
+#include <SELib/BasicTypes.h>
 
 namespace CPU {
     extern "C" UINT64 GetGdtBase();
