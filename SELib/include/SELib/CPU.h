@@ -1,8 +1,16 @@
 #pragma once
 
 #include <SELib/BasicTypes.h>
+#include <SELib/ia32.h>
+#include <intrin.h>
 
 namespace CPU {
+    __forceinline UINT64 ApicId() {
+        CPUID_EAX_01 cpuid_value;
+        __cpuid((int*)&cpuid_value, 1);
+        return cpuid_value.CpuidAdditionalInformation.InitialApicId;
+    }
+
     extern "C" UINT64 GetGdtBase();
     extern "C" UINT16  GetGdtLimit();
     extern "C" UINT64 GetIdtBase();
