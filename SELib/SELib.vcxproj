@@ -7,7 +7,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="include\SELib\pe.cpp" />
+    <ClCompile Include="src\pe.cpp" />
     <ClCompile Include="src\CPU.cpp" />
     <ClCompile Include="src\IDT.cpp" />
     <ClCompile Include="src\Bitmap.cpp" />
