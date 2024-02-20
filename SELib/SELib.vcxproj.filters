@@ -41,6 +41,9 @@
     <ClCompile Include="src\pe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Ept.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\SELib\Globals.h">
@@ -86,6 +89,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\SELib\pe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SELib\Ept.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SELib\hvgdk.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

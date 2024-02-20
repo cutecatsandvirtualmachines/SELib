@@ -281,7 +281,8 @@ namespace svm {
         unsigned long long NpEnable : 1; // Nested paging
         unsigned long long EnableSev : 1; // Secure Encrypted Virtualization
         unsigned long long EnabledEncryptedState : 1; // Enable encrypted state for SEV
-        unsigned long long Reserved2 : 61; // Should be zero
+        unsigned long long GMETEnable : 1; // Guest Mode Execute Trap Extension
+        unsigned long long Reserved2 : 60; // Should be zero
         unsigned long long AvicApicBar : 52; // Address must be 4-Kbyte aligned
         unsigned long long Reserved3 : 12;
         unsigned long long GuestGhcbPa; // Guest physical address of GHCB

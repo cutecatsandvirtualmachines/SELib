@@ -2,14 +2,19 @@
 
 #include <SELib/ia32.h>
 
+#define DECLSPEC_ALIGN(x)   __declspec(align(x))
 #define PAGE_SIZE 0x1000
+#define SIZE_2_MB (PAGE_SIZE * 512)
 #define LARGE_PAGE_SIZE (PAGE_SIZE * 512)
 #define OFFSET_2MB(x) (x & (LARGE_PAGE_SIZE - 1))
 
 #define RtlZeroMemory(p, len) memory::memset(p, 0, len)
 #define RtlCopyMemory(dst, src, len) memory::memcpy(dst, src, len)
 
+#define PAGE_SHIFT 12L
 #define PAGE_ALIGN(x) ((UINT64)x & ~0xfffull)
+
+typedef UINT64(*fnVirtToPhy)(UINT64 virt);
 
 typedef struct _PML4T {
     PML4E_64 entry[512];

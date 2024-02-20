@@ -5,6 +5,11 @@
 #include <intrin.h>
 
 namespace CPU {
+    extern bool bIntelCPU;
+
+    void Init();
+    bool IsIntelCPU();
+
     __forceinline UINT64 ApicId() {
         CPUID_EAX_01 cpuid_value;
         __cpuid((int*)&cpuid_value, 1);

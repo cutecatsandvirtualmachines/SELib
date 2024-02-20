@@ -7,6 +7,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Ept.cpp" />
     <ClCompile Include="src\pe.cpp" />
     <ClCompile Include="src\CPU.cpp" />
     <ClCompile Include="src\IDT.cpp" />
@@ -19,6 +20,8 @@
     <ClCompile Include="src\Svm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\SELib\hvgdk.h" />
+    <ClInclude Include="include\SELib\Ept.h" />
     <ClInclude Include="include\SELib\BasicTypes.h" />
     <ClInclude Include="include\SELib\CPU.h" />
     <ClInclude Include="include\SELib\IDT.h" />
