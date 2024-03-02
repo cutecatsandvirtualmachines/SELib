@@ -710,4 +710,11 @@ namespace svm {
         AVIC_NOACCEL,
         VMEXIT_VMGEXIT
     };
+
+    enum EventType {
+        e_External = 0,
+        e_NMI = 2,
+        e_Exception,
+        e_Software
+    };
 }
